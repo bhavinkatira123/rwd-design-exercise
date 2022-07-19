@@ -28,7 +28,7 @@ const renderInput = (props: FieldProps<any> & TextFieldProps) => {
 	const field = props.field;
 
 	return (
-		<div className='py-3'>
+		<div className='pt-5'>
 			{/* <label className='font-weight-400 font-size-18' style={{color: '#8E8EA1'}}>
 				{props.placeholder}
 			</label> */}
@@ -52,6 +52,6 @@ const renderInput = (props: FieldProps<any> & TextFieldProps) => {
  * common field error message component
  * @param props
  */
-const fieldErrorMessage = (props: any) => <span className='Error'>{props.children}</span>;
+const fieldErrorMessage = (props: any) => <span className='text-red-600 text-sm float-left pb-3'>{props.children}</span>;
 
 export {renderInput, fieldErrorMessage};

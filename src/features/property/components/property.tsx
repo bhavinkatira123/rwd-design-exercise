@@ -13,10 +13,9 @@ const properties = [
 
 const Property = () => {
 	return (
-		<div>
-			{/* repeat(auto-fill, minmax(460px, 1fr)) */}
-			<h1 className='font-medium text-left text-3xl py-3'>Australia's best investment property deals</h1>
-			<div className='property-container' style={{gridTemplateColumns: '1fr 1fr 1fr'}}>
+		<div className='mt-3'>
+			<h1 className='font-medium text-left text-2xl sm:text-3xl'>Australia's best investment property deals</h1>
+			<div className='property-container md:grid-cols-tablet_responsive xl:grid-cols-auto sm:grid-cols-mobile_responsive'>
 				{properties.map((property, index) => (
 					<PropertyCard key={index} title={property.title} city={property.city} price={property.price} image={property.image} />
 				))}
